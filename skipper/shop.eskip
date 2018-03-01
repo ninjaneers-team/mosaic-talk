@@ -1,0 +1,12 @@
+main: Path("new")
+  -> setPath("/index")
+  -> "http://localhost:8001";
+header: Path("/header")
+  -> "http://localhost:8002";
+product: Path("/product")
+  -> "http://localhost:8003";
+advertising: Path("/advertising")
+  -> "http://localhost:8004";
+old: Path("old")
+  -> setPath("/")
+  -> "http://localhost:8100";

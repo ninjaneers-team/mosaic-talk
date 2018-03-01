@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The New Shop</title>
+  </head>
+  <body>
+    <fragment src="http://localhost:9090/header"></fragment>
+  <!--
+    async
+    timeout="1800"
+    fallback-src="http://localhost:9090/header"
+  -->
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+      <div style="flex: 1; margin-top: 10px;">
+        <fragment src="http://localhost:9090/advertising" async></fragment>
+      </div>
+      <div style="flex: 1;">
+        <fragment src="http://localhost:9090/product" primary></fragment>
+      </div>
+    </div>
+  </body>
+</html>
