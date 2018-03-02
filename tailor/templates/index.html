@@ -6,14 +6,15 @@
   </head>
   <body>
     <fragment src="http://localhost:9090/header"></fragment>
-  <!--
-    async
-    timeout="1800"
-    fallback-src="http://localhost:9090/header"
-  -->
+    <fragment src="http://localhost:9090/analytics"></fragment>
     <div style="display: flex; flex-direction: row; justify-content: center;">
       <div style="flex: 1; margin-top: 10px;">
-        <fragment src="http://localhost:9090/advertising" async></fragment>
+        <!--
+        timeout="1500"
+        fallback-src="http://localhost:9090/fallback-advertising"
+        async
+        -->
+        <fragment src="http://localhost:9090/advertising"</fragment>
       </div>
       <div style="flex: 1;">
         <fragment src="http://localhost:9090/product" primary></fragment>

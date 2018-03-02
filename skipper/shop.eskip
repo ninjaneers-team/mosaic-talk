@@ -7,6 +7,10 @@ product: Path("/product")
   -> "http://localhost:8003";
 advertising: Path("/advertising")
   -> "http://localhost:8004";
+analytics: Path("/analytics")
+  -> "http://localhost:8005";
+fallbackAdvertising: Path("/fallback-advertising")
+  -> "http://localhost:8006";
 old: Path("old")
   -> setPath("/")
   -> "http://localhost:8100";
